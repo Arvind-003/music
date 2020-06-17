@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+}
+/* NAVIGATOR */
+header {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(44, 41, 10);
+}
+.container {
+  display: flex;
+  height: inherit;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  transform: scale(0.8);
+}
+.logo-container .favourite {
+  color: ivory;
+  width: 60%;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+
+.search-container {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-box {
+  background: rgb(6, 10, 32);
+  border: 2px solid red;
+  height: 3.5rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.search-container div {
+  margin-right: 5rem;
+}
+.search-box i {
+  color: tomato;
+}
+.search-box input {
+  height: 60%;
+  font-size: 1.4rem;
+  width: 85%;
+  outline: none;
+  background: transparent;
+  color: white;
+  padding: 3%;
+  border: 0px solid white;
+}
+.search-box input::placeholder {
+  color: white;
+}
+.bell i {
+  color: white;
+  font-size: 1.5rem;
+}
+.profile-photo {
+  height: 6rem;
+  width: 6rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.profile-photo img {
+  height: 100%;
+  width: 100%;
+}
+/* GIVING SOME SPACE BETWEEN NAV AND BODY */
+.space-between{
+    background-color: lightcoral;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.space-box1{
+    width: 65%;
+    height: inherit;
+    background-color: lightcyan;
+    margin-left: 4rem;
+}
+.space-box2{
+    width: 25%;
+    height: inherit;
+    background-color: lawngreen;
+    margin-right: 4rem;
+}
