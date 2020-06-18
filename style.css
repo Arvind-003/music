@@ -94,24 +94,104 @@ header {
   width: 100%;
   margin-top: 40px;
   display: flex;
-  height: 200vh;
   position: relative;
 }
 .song-container {
   width: 75%;
-  height: 300px;
+  /* height: 300px; */
   /* background-color: lightcyan; */
   margin-left: 4rem;
 }
+/* SLIDE SHOW CONTAINER */
+.slide-show {
+  width: 100%;
+  /* same width: as song container ; */
+  /* height: 400px; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.slide-show img {
+  width: 400px;
+  height: 300px;
+  transition: 0.5s all ease-in-out;
+  opacity: 0.8;
+}
+.slide-show img:hover {
+  transform: scale(1.3);
+  opacity: 1;
+  z-index: 1;
+}
+/* LATEST RELEASE CONTAINER */
+.latest-release-container {
+  width: 100%;
+  height: 400px;
+  /* background-color: rgb(92, 92, 240); */
+}
+.latest-release-header h1 {
+  margin-left: 15%;
+  font-size: 2rem;
+}
+.latest-release-outer {
+  width: 100%;
+  /* background-color: skyblue; */
+  display: flex;
+  justify-content: center;
+}
+.latest-release-inner {
+  width: 70%;
+  height: 300px;
+  /* background-color: snow; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.latest-release {
+  width: 50%;
+  height: 150px;
+  /* background-color: yellow; */
+  display: flex;
+}
+.latest-release-column1 {
+  width: 90%;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  color: azure;
+}
+.latest-release-column1 img {
+  width: 8rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.latest-release-column1 div {
+  margin-left: 10px;
+}
+.latest-release-column2 {
+  width: 10%;
+  /* background-color: turquoise; */
+}
+.latest-release-column2 i {
+  font-size: 1.6rem;
+  width: 100%;
+  color: #8e6dc3;
+  cursor: pointer;
+}
+.latest-release-column2 p {
+  color: azure;
+}
+
+/* QUEUE CONTAINER */
 .queue-container {
   width: 20%;
   height: 50rem;
   /* background-color: lawngreen; */
   margin-right: 4rem;
-  
+
   position: sticky;
   top: 0;
-  
 }
 
 .queue-header {
@@ -124,7 +204,7 @@ header {
   color: azure;
 }
 .queue-header h4,
-i {
+.queue-header i {
   color: rgb(92, 92, 240);
 }
 .queue-header h1 {
@@ -146,10 +226,9 @@ i {
 .queue-row {
   width: 100%;
   height: inherit;
-  
+
   color: white;
   overflow-y: scroll;
-
 }
 .queue-container .queue-row::-webkit-scrollbar {
   display: none;
@@ -180,4 +259,7 @@ i {
 .column1 {
   display: flex;
   align-items: center;
+}
+.column2 i {
+  color: #ff0076;
 }
