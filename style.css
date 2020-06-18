@@ -10,7 +10,7 @@ body {
 header {
   width: 100%;
   height: 150px;
-  background-color: rgb(44, 41, 10);
+  /* background-color: rgb(44, 41, 10); */
 }
 .container {
   display: flex;
@@ -88,22 +88,96 @@ header {
   width: 100%;
 }
 /* GIVING SOME SPACE BETWEEN NAV AND BODY */
-.space-between{
-    background-color: lightcoral;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
+
+.main-body {
+  /* background-color: lightcoral; */
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  height: 200vh;
+  position: relative;
 }
-.space-box1{
-    width: 65%;
-    height: inherit;
-    background-color: lightcyan;
-    margin-left: 4rem;
+.song-container {
+  width: 75%;
+  height: 300px;
+  /* background-color: lightcyan; */
+  margin-left: 4rem;
 }
-.space-box2{
-    width: 25%;
-    height: inherit;
-    background-color: lawngreen;
-    margin-right: 4rem;
+.queue-container {
+  width: 20%;
+  height: 50rem;
+  /* background-color: lawngreen; */
+  margin-right: 4rem;
+  
+  position: sticky;
+  top: 0;
+  
+}
+
+.queue-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.queue-header h1 {
+  color: azure;
+}
+.queue-header h4,
+i {
+  color: rgb(92, 92, 240);
+}
+.queue-header h1 {
+  width: 50%;
+}
+.queue-header div {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.queue-header div h4 {
+  margin-right: 20px;
+}
+.queue-header div i {
+  margin-right: 10px;
+  transform: rotate(180deg);
+}
+/* QUEUE TABLE */
+.queue-row {
+  width: 100%;
+  height: inherit;
+  
+  color: white;
+  overflow-y: scroll;
+
+}
+.queue-container .queue-row::-webkit-scrollbar {
+  display: none;
+}
+
+.queue-row .row {
+  display: flex;
+  height: 6rem;
+  /* background-color: blue; */
+}
+.row .column1 {
+  width: 90%;
+}
+.column1 div img {
+  width: 4rem;
+  height: 4rem;
+}
+.column1 div {
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+.row .column2 {
+  width: 10%;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+.column1 {
+  display: flex;
+  align-items: center;
 }
