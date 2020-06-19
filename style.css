@@ -183,6 +183,39 @@ header {
 .latest-release-column2 p {
   color: azure;
 }
+/* POPULAR ARTIST CONTAINER */
+.popular-artist-container{
+  width: 100%;
+  /* background-color: #ff0076; */
+}
+.popular-artist-header h1{
+  font-size: 1.5rem;
+  color:#ff93c5;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.popular-artist-collection{
+  display: flex;
+  justify-content: space-evenly;
+}
+.artist{
+  width: 8rem;
+}
+.artist-image{
+  width: 8rem;
+  }
+.artist-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+.popular-artist-collection .artist p{
+  font-size: 1.2rem;
+  color: azure;
+  text-align: center;
+}
 
 /* QUEUE CONTAINER */
 .queue-container {
