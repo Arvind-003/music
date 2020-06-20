@@ -187,12 +187,13 @@ header {
 .popular-artist-container{
   width: 100%;
   /* background-color: #ff0076; */
+  margin-bottom: 30px;
 }
 .popular-artist-header h1{
   font-size: 1.5rem;
   color:#ff93c5;
-  margin-left: 5%;
-  margin-bottom: 10px;
+  margin-left: 3%;
+  margin-bottom: 20px;
 }
 .popular-artist-collection{
   display: flex;
@@ -216,6 +217,76 @@ header {
   color: azure;
   text-align: center;
 }
+/* MUSIC STATION */
+.station-container {
+  width: 100%;
+  /* height: 300px; */
+  /* background-color: crimson; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.station {
+  width: 14rem;
+  height: 14rem;
+  /* background-color: darkgray; */
+  position: relative;
+}
+.inner1 {
+  width: 12rem;
+  height: 7rem;
+  background-color: rgb(255, 239, 22);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner2 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(255, 230, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outer {
+  width: 8rem;
+  height: 8rem;
+  background-color: rgb(255, 157, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer img {
+  width: 7rem;
+  height: 7rem;
+}
+.station-music {
+  width: 8rem;
+  height: 8rem;
+  position:relative;
+}
+.station-music img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.station-music p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: aliceblue;
+  font-size: 1.8rem;
+  transform: translate(-50%,-50%);
+}
+
+
 
 /* QUEUE CONTAINER */
 .queue-container {
