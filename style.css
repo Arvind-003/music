@@ -288,6 +288,50 @@ header {
 
 
 
+/* PARTY CONTAINER */
+.party-container{
+  width: 100%;
+  height: 300px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.party{
+  width: 450px;
+  height: 230px;
+  /* background-color: rgb(119, 23, 76); */
+  position: relative;
+  overflow: hidden;
+}
+.party  img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  transition: 0.5s all ease-in-out;
+}
+.party span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 1.6rem;
+  cursor: default;
+}
+.party  img:hover {
+  transform: scale(1.3);
+  opacity: 1;
+
+}
+
+
+
+
+
+
+
 /* QUEUE CONTAINER */
 .queue-container {
   width: 20%;
