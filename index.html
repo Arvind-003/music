@@ -1,314 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music On</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="container">
-        <div class="logo-container">
-          <div class="logo">
-            <img src="logo.png" alt="Music On" />
-          </div>
-          <div class="favourite">
-            <p>Favourites</p>
-          </div>
-        </div>
-        <div class="search-container">
-          <div class="search-box">
-            <a class="btn" href="#"><i class="fas fa-search"></i></a>
-            <input type="text" placeholder="Search" />
-            <a class="mic" href="#"><i class="fas fa-microphone"></i></a>
-          </div>
-          <div class="bell">
-            <i class="fas fa-bell"></i>
-          </div>
-          <div class="profile-photo">
-            <img src="02.jpg" alt="profile" />
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="main-body">
-        <div class="song-container">
-          <div class="slide-show">
-            <img src="02.jpg">
-            <img src="04.jpg">
-            <img src="06.jpg">
-          </div>
-          <div class="latest-release-container">
-            <div class="latest-release-header"><h1>Latest Release</h1></div>
-            <div class="latest-release-outer">
-              <div class="latest-release-inner">
-                <div class="latest-release">
-                  <div class="latest-release-column1">
-                    <img src="01.jpg" alt="latest release song" class="src">
-                    <div><h3>Yaalgaar</h3>AUG 11,2019</div>
-                  </div>
-                  <div class="latest-release-column2">
-                    <i class="fas fa-ellipsis-h"></i></i>
-                    <p>4.44</p>
-                  </div>
 
-                </div>
-                <div class="latest-release">
-                  <div class="latest-release-column1">
-                    <img src="04.jpg" alt="latest release song" class="src">
-                    <div><h3>Yaalgaar</h3>AUG 11,2019</div>
-                  </div>
-                  <div class="latest-release-column2">
-                    <i class="fas fa-ellipsis-h"></i></i>
-                    <p>4.44</p>
-                  </div>
-                </div>
-                <div class="latest-release">
-                  <div class="latest-release-column1">
-                    <img src="02.jpg" alt="latest release song" class="src">
-                    <div><h3>Yaalgaar</h3>AUG 11,2019</div>
-                  </div>
-                  <div class="latest-release-column2">
-                    <i class="fas fa-ellipsis-h"></i></i>
-                    <p>4.44</p>
-                  </div>
-                </div>
-                <div class="latest-release">
-                  <div class="latest-release-column1">
-                    <img src="03.jpg" alt="latest release song" class="src">
-                    <div><h3>Yaalgaar</h3>AUG 11,2019</div>
-                  </div>
-                  <div class="latest-release-column2">
-                    <i class="fas fa-ellipsis-h"></i></i>
-                    <p>4.44</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music On</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+</head>
 
-          <div class="popular-artist-container">
-            <div class="popular-artist-header">
-             <h1> Popular Artists</h1>
-            </div>
-            <div class="popular-artist-collection">
-              <div class="artist">
-                <div class="artist-image">
-                 <img src="13.jpg" alt="artist name">
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="logo.png" alt="Music On" />
+        </div>
+        <div class="favourite">
+          <p>Favourites</p>
+        </div>
+      </div>
+      <div class="search-container">
+        <div class="search-box">
+          <a class="btn" href="#"><i class="fas fa-search"></i></a>
+          <input type="text" placeholder="Search" />
+          <a class="mic" href="#"><i class="fas fa-microphone"></i></a>
+        </div>
+        <div class="bell">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="profile-photo">
+          <img src="02.jpg" alt="profile" />
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="main-body">
+      <div class="song-container">
+        <div class="slide-show">
+          <img src="02.jpg">
+          <img src="04.jpg">
+          <img src="06.jpg">
+        </div>
+        <div class="latest-release-container">
+          <div class="latest-release-header">
+            <h1>Latest Release</h1>
+          </div>
+          <div class="latest-release-outer">
+            <div class="latest-release-inner">
+              <div class="latest-release">
+                <div class="latest-release-column1">
+                  <img src="01.jpg" alt="latest release song" class="src">
+                  <div>
+                    <h3>Yaalgaar</h3>AUG 11,2019
+                  </div>
                 </div>
-                <p>Kishore Kumar</p>
+                <div class="latest-release-column2">
+                  <i class="fas fa-ellipsis-h"></i></i>
+                  <p>4.44</p>
+                </div>
+
               </div>
-              <div class="artist">
-                <div class="artist-image">
-                 <img src="14.jpg" alt="artist name">
+              <div class="latest-release">
+                <div class="latest-release-column1">
+                  <img src="04.jpg" alt="latest release song" class="src">
+                  <div>
+                    <h3>Yaalgaar</h3>AUG 11,2019
+                  </div>
                 </div>
-                <p>Sakira</p>
+                <div class="latest-release-column2">
+                  <i class="fas fa-ellipsis-h"></i></i>
+                  <p>4.44</p>
+                </div>
               </div>
-              <div class="artist">
-                <div class="artist-image">
-                 <img src="15.jpg" alt="artist name">
+              <div class="latest-release">
+                <div class="latest-release-column1">
+                  <img src="02.jpg" alt="latest release song" class="src">
+                  <div>
+                    <h3>Yaalgaar</h3>AUG 11,2019
+                  </div>
                 </div>
-                <p>Lata Mangeshkar</p>
+                <div class="latest-release-column2">
+                  <i class="fas fa-ellipsis-h"></i></i>
+                  <p>4.44</p>
+                </div>
               </div>
-              <div class="artist">
-                <div class="artist-image">
-                 <img src="16.jpg" alt="artist name">
+              <div class="latest-release">
+                <div class="latest-release-column1">
+                  <img src="03.jpg" alt="latest release song" class="src">
+                  <div>
+                    <h3>Yaalgaar</h3>AUG 11,2019
+                  </div>
                 </div>
-                <p>Sunidhi Chauhan</p>
-              </div>
-              <div class="artist">
-                <div class="artist-image">
-                 <img src="17.jpg" alt="artist name">
+                <div class="latest-release-column2">
+                  <i class="fas fa-ellipsis-h"></i></i>
+                  <p>4.44</p>
                 </div>
-                <p>Mohammad Rafi</p>
-              </div>
-              <div class="artist">
-                <div class="artist-image">
-                 <img src="18.jpg" alt="artist name">
-                </div>
-                <p>Pitbull</p>
-              </div>
-              <div class="artist">
-                <div class="artist-image">
-                 <img src="19.jpg" alt="artist name">
-                </div>
-                <p>Arijit Singh</p>
               </div>
             </div>
           </div>
 
-          <div class="station-container">
-            <div class="station">
-              <div class="inner1">
-      
+
+        </div>
+
+        <div class="popular-artist-container">
+          <div class="popular-artist-header">
+            <h1> Popular Artists</h1>
+          </div>
+          <div class="popular-artist-collection">
+            <div class="artist">
+              <div class="artist-image">
+                <img src="13.jpg" alt="artist name">
               </div>
-              <div class="inner2">
-                
+              <p>Kishore Kumar</p>
+            </div>
+            <div class="artist">
+              <div class="artist-image">
+                <img src="14.jpg" alt="artist name">
               </div>
-              <div class="outer">
-                <img src="stations.png" alt="music station">
+              <p>Sakira</p>
+            </div>
+            <div class="artist">
+              <div class="artist-image">
+                <img src="15.jpg" alt="artist name">
               </div>
+              <p>Lata Mangeshkar</p>
             </div>
-            <div class="station-music">
-                <img src="love.jpg" alt="love music">
-                <p>Love</p>
+            <div class="artist">
+              <div class="artist-image">
+                <img src="16.jpg" alt="artist name">
+              </div>
+              <p>Sunidhi Chauhan</p>
             </div>
-            <div class="station-music">
-              <img src="retro.jpg" alt="love music">
-              <p>Retro</p>
+            <div class="artist">
+              <div class="artist-image">
+                <img src="17.jpg" alt="artist name">
+              </div>
+              <p>Mohammad Rafi</p>
             </div>
-            <div class="station-music">
-              <img src="chill.jpg" alt="love music">
-              <p>Chill</p>
+            <div class="artist">
+              <div class="artist-image">
+                <img src="18.jpg" alt="artist name">
+              </div>
+              <p>Pitbull</p>
             </div>
-            <div class="station-music">
-              <img src="love.jpg" alt="love music">
-              <p>Love</p>
+            <div class="artist">
+              <div class="artist-image">
+                <img src="19.jpg" alt="artist name">
+              </div>
+              <p>Arijit Singh</p>
             </div>
-            <div class="station-music">
-              <img src="rock.jpg" alt="love music">
-              <p>Rock</p>
+          </div>
+        </div>
+
+        <div class="station-container">
+          <div class="station">
+            <div class="inner1">
+
             </div>
-            <div class="station-music">
-              <img src="pop.jpg" alt="love music">
-              <p>Pop</p>
+            <div class="inner2">
+
             </div>
-            
+            <div class="outer">
+              <img src="stations.png" alt="music station">
+            </div>
+          </div>
+          <div class="station-music">
+            <img src="love.jpg" alt="love music">
+            <p>Love</p>
+          </div>
+          <div class="station-music">
+            <img src="retro.jpg" alt="love music">
+            <p>Retro</p>
+          </div>
+          <div class="station-music">
+            <img src="chill.jpg" alt="love music">
+            <p>Chill</p>
+          </div>
+          <div class="station-music">
+            <img src="love.jpg" alt="love music">
+            <p>Love</p>
+          </div>
+          <div class="station-music">
+            <img src="rock.jpg" alt="love music">
+            <p>Rock</p>
+          </div>
+          <div class="station-music">
+            <img src="pop.jpg" alt="love music">
+            <p>Pop</p>
           </div>
 
-          <div class="party-container">
-            <div class="party">
-              <img src="party.jpeg" alt="part song">
-              <span>Party</span>
+        </div>
+
+        <div class="party-container">
+          <div class="party">
+            <img src="party.jpeg" alt="part song">
+            <span>Party</span>
+          </div>
+          <div class="party">
+            <img src="electronic.jpeg" alt="electronic song">
+            <span>Electronic</span>
+          </div>
+          <div class="party">
+            <img src="road-trip.jpeg" alt="road trip song">
+            <span>Road Trip</span>
+          </div>
+        </div>
+
+
+        <div class="latest-english">
+          <div class="latest-english-header">Latest English</div>
+          <div class="latest-english-container">
+            <div class="onism">
+              <div class="onism-image">
+                <img src="choose_life.jpg" alt="choose life">
+              </div>
+              <p class="name">Choose Life</p>
+              <p class="date">June 2020</p>
             </div>
-            <div class="party">
-              <img src="electronic.jpeg" alt="electronic song">
-              <span>Electronic</span>
+            <div class="onism">
+              <div class="onism-image">
+                <img src="rare.jpg" alt="rare image">
+              </div>
+              <p class="name">Rare</p>
+              <p class="date">Apr 2020</p>
             </div>
-            <div class="party">
-              <img src="road-trip.jpeg" alt="road trip song">
-              <span>Road Trip</span>
+            <div class="onism">
+              <div class="onism-image">
+                <img src="control.jpg" alt="control image">
+              </div>
+              <p class="name">Control</p>
+              <p class="date">Mar 2020</p>
+            </div>
+            <div class="onism">
+              <div class="onism-image">
+                <img src="save_my_life.jpg" alt="save my life song">
+              </div>
+              <p class="name">Save My Life</p>
+              <p class="date">Mar 2020</p>
+            </div>
+            <div class="onism">
+              <div class="onism-image">
+                <img src="end_of_time.jpg" alt="end of time song">
+              </div>
+              <p class="name">End Of Time</p>
+              <p class="date">Mar 2020</p>
             </div>
           </div>
         </div>
-        <div class="queue-container">
-          <div class="queue-header">
-            <h1>Queue</h1>
-            <div>
-              <h4>Queue</h4>
-              <i class="fas fa-chevron-up"></i></i>
-            </div>
-          </div>
-          <div class="queue-row">
-            <div class="row">
-              <div class="column1">
-                <div><h4>01</h4></div>
-                <div><img src="01.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
+
+        <div class="latest-english">
+          <div class="latest-english-header">Latest Hindi</div>
+          <div class="latest-english-container">
+            <div class="onism">
+              <div class="onism-image">
+                <img src="choose_life.jpg" alt="choose life">
               </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
+              <p class="name">Choose Life</p>
+              <p class="date">June 2020</p>
             </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>01</h4></div>
-                <div><img src="02.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
+            <div class="onism">
+              <div class="onism-image">
+                <img src="rare.jpg" alt="rare image">
               </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
+              <p class="name">Rare</p>
+              <p class="date">Apr 2020</p>
             </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>02</h4></div>
-                <div><img src="03.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
+            <div class="onism">
+              <div class="onism-image">
+                <img src="control.jpg" alt="control image">
               </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
+              <p class="name">Control</p>
+              <p class="date">Mar 2020</p>
             </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>03</h4></div>
-                <div><img src="04.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
+            <div class="onism">
+              <div class="onism-image">
+                <img src="save_my_life.jpg" alt="save my life song">
               </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
+              <p class="name">Save My Life</p>
+              <p class="date">Mar 2020</p>
             </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>04</h4></div>
-                <div><img src="05.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
+            <div class="onism">
+              <div class="onism-image">
+                <img src="end_of_time.jpg" alt="end of time song">
               </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
-            </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>05</h4></div>
-                <div><img src="06.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
-              </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
-            </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>06</h4></div>
-                <div><img src="07.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
-              </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
-            </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>07</h4></div>
-                <div><img src="08.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
-              </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
-            </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>08</h4></div>
-                <div><img src="09.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
-              </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
-            </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>09</h4></div>
-                <div><img src="10.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
-              </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
-            </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>10</h4></div>
-                <div><img src="11.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
-              </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
-            </div>
-            <div class="row">
-              <div class="column1">
-                <div><h4>11</h4></div>
-                <div><img src="12.jpg"></div>
-                <div><div><h3>Yalgaar</h3>Yalgaar</div></div>
-              </div>
-              <div class="column2"><i class="far fa-heart"></i></div>
+              <p class="name">End Of Time</p>
+              <p class="date">Mar 2020</p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+
+
+
+      </div>
+      <div class="queue-container">
+        <div class="queue-header">
+          <h1>Queue</h1>
+          <div>
+            <h4>Queue</h4>
+            <i class="fas fa-chevron-up"></i></i>
+          </div>
+        </div>
+        <div class="queue-row">
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>01</h4>
+              </div>
+              <div><img src="01.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>01</h4>
+              </div>
+              <div><img src="02.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>02</h4>
+              </div>
+              <div><img src="03.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>03</h4>
+              </div>
+              <div><img src="04.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>04</h4>
+              </div>
+              <div><img src="05.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>05</h4>
+              </div>
+              <div><img src="06.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>06</h4>
+              </div>
+              <div><img src="07.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>07</h4>
+              </div>
+              <div><img src="08.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>08</h4>
+              </div>
+              <div><img src="09.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>09</h4>
+              </div>
+              <div><img src="10.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>10</h4>
+              </div>
+              <div><img src="11.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="row">
+            <div class="column1">
+              <div>
+                <h4>11</h4>
+              </div>
+              <div><img src="12.jpg"></div>
+              <div>
+                <div>
+                  <h3>Yalgaar</h3>Yalgaar
+                </div>
+              </div>
+            </div>
+            <div class="column2"><i class="far fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
