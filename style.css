@@ -5,6 +5,7 @@
 }
 body {
   background: #000;
+  
 }
 /* NAVIGATOR */
 header {
@@ -94,7 +95,7 @@ header {
   width: 100%;
   margin-top: 40px;
   display: flex;
-  position: relative;
+  
 }
 .song-container {
   width: 75%;
@@ -167,9 +168,30 @@ header {
   margin-left: 20px;
   cursor: pointer;
 }
-.latest-release-column1 div {
+.latest-release-column1 .title{
   margin-left: 10px;
 }
+.latest-release-column1 .play{
+  position: relative;
+}
+.latest-release-column1 .play i{
+  display: none;
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  color: #070506;
+  font-size: 4rem;
+}
+.latest-release-column1 .play img:hover {
+  opacity: 0.4;
+}
+.latest-release-column1 .play:hover i{
+  display: block;
+}
+
+
+
+
 .latest-release-column2 {
   width: 10%;
   /* background-color: turquoise; */
@@ -183,6 +205,11 @@ header {
 .latest-release-column2 p {
   color: azure;
 }
+
+
+
+
+
 /* POPULAR ARTIST CONTAINER */
 .popular-artist-container{
   width: 100%;
@@ -495,7 +522,12 @@ header {
 
 
 /* PLAYER CONTAINER */
-.player-container{
+#player-container{
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+#player-container:target {
   width: 100%;
   background-color: rgb(14, 11, 11);
   height: 90px;
@@ -504,8 +536,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 1;
 }
-.player-container .left-container{
+#player-container .left-container{
   width: 22%;
   height: 100%;
   /* background-color: rgb(175, 175, 175); */
@@ -513,7 +546,7 @@ header {
   justify-content: space-evenly;
 }
 
-.player-container .left-container .player-image{
+#player-container .left-container .player-image{
   width: 70%;
   height: inherit;
   display: flex;
@@ -522,22 +555,22 @@ header {
   /* background-color: rgb(26, 26, 143); */
   
 }
-.player-container .left-container .player-image img{
+#player-container .left-container .player-image img{
   width: 6rem ;
   height: inherit;
 }
-.player-container .player-image .image-detail .song-name{
+#player-container .player-image .image-detail .song-name{
   font-weight: 600;
   color: aliceblue;
   font-size: 1.4rem;
 }
-.player-container .player-image .image-detail .name{
+#player-container .player-image .image-detail .name{
   
   color: rgb(127, 131, 134);
   font-size: 1rem;
 }
 
-.player-container .left-container .heart{
+#player-container .left-container .heart{
   width: 20%;
   height: inherit;
   /* background-color: rgb(255, 255, 15); */
@@ -545,7 +578,7 @@ header {
   align-items: center;
   justify-content: space-around;
 }
-.player-container .left-container .heart i{
+#player-container .left-container .heart i{
   font-size: 1.4rem;
   color: rgb(200, 195, 195);
 }
@@ -557,14 +590,14 @@ header {
 
 
 
-.player-container .middle-container{
+#player-container .middle-container{
   width: 50%;
   height: 80%;
   /* background-color: rgb(21, 3, 102); */
   display: flex;
   flex-direction: column;
 }
-.player-container .middle-container .control{
+#player-container .middle-container .control{
   width: 40%;
   height: 60%;
   margin: 0 auto;
@@ -573,20 +606,20 @@ header {
   align-items: center;
   justify-content: space-around;
 }
-.player-container .middle-container .control .pause i{
+#player-container .middle-container .control .pause i{
   color: aliceblue;
   font-size: 2rem;
 }
-.player-container .middle-container .control .back i{
+#player-container .middle-container .control .back i{
   font-size: 1.4rem;
   color: rgb(204, 200, 200);
 }
-.player-container .middle-container .control .shuffle i{
+#player-container .middle-container .control .shuffle i{
   font-size: 1.2;
   color: rgb(148, 148, 148);
 }
 
-.player-container .middle-container .duration{
+#player-container .middle-container .duration{
   width: 80%;
   height: 40%;
   margin: 0 auto;
@@ -595,16 +628,16 @@ header {
   align-items: center;
   justify-content: space-around;
 }
-.player-container .middle-container .duration input{
+#player-container .middle-container .duration input{
   width: 80%;
 }
-.player-container .middle-container .duration p{
+#player-container .middle-container .duration p{
   color: antiquewhite;
 }
 
 
 
-.player-container .right-container{
+#player-container .right-container{
   width: 20%;
   height: 80%;
   /* background-color: rgb(175, 175, 175); */
@@ -612,19 +645,19 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
-.player-container .right-container div{
+#player-container .right-container div{
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.player-container .right-container div input{
+#player-container .right-container div input{
   width: 4rem;
   height: 3px;
   margin-left: 10px;
   
 }
 
-.player-container .right-container i
+#player-container .right-container i
 {
   color: rgb(195, 190, 186);
   font-size: 1.2rem;

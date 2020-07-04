@@ -53,7 +53,7 @@
               <div class="latest-release">
                 <div class="latest-release-column1">
                   <img src="01.jpg" alt="latest release song" class="src">
-                  <div>
+                  <div class="title">
                     <h3>Yaalgaar</h3>AUG 11,2019
                   </div>
                 </div>
@@ -65,8 +65,12 @@
               </div>
               <div class="latest-release">
                 <div class="latest-release-column1">
-                  <img src="04.jpg" alt="latest release song" class="src">
-                  <div>
+                  <div class="play">
+                    <img src="04.jpg" alt="latest release song" class="src">
+                    <a href="#player-container"><i class="fas fa-play"></i></a>
+                  </div>
+
+                  <div class="title">
                     <h3>Yaalgaar</h3>AUG 11,2019
                   </div>
                 </div>
@@ -78,7 +82,7 @@
               <div class="latest-release">
                 <div class="latest-release-column1">
                   <img src="02.jpg" alt="latest release song" class="src">
-                  <div>
+                  <div class="title">
                     <h3>Yaalgaar</h3>AUG 11,2019
                   </div>
                 </div>
@@ -90,7 +94,7 @@
               <div class="latest-release">
                 <div class="latest-release-column1">
                   <img src="03.jpg" alt="latest release song" class="src">
-                  <div>
+                  <div class="title">
                     <h3>Yaalgaar</h3>AUG 11,2019
                   </div>
                 </div>
@@ -484,47 +488,50 @@
         </div>
       </div>
     </section>
-    <section class="player-container">
-      <div class="left-container">
-        <div class="player-image">
-          <img src="10.jpg" alt="image">
-          <div class="image-detail">
-            <p class="song-name">Koi Fariyad</p>
-            <p class="name">B PRAAK </p>
-          </div>
-        </div>
-        <div class="heart">
-          <span><i class="far fa-heart"></i></span>
-          <i class="fas fa-ban"></i>
-        </div>
-      </div>
-      <div class="middle-container">
-        <div class="control">
-          <span class="shuffle"><i class="fas fa-random"></i></span>
-          <span class="back"><i class="fas fa-step-backward"></i></span>
-          <span class="pause"><i class="far fa-pause-circle"></i></span>
-          <span class="back"><i class="fas fa-step-forward"></i></span>
-          <span class="shuffle"><i class="fas fa-redo-alt"></i></span>
-        </div>
-        <div class="duration">
-          <p>2.39 </p>
-          <input type="range">
-          <p> 4.44</p>
-        </div>
-      </div>
-      <div class="right-container">
-        <i class="fas fa-file-alt"></i>
-        <i class="fas fa-music"></i>
-        <div class="volume">
-          <i class="fas fa-volume-up"></i>
-          <input type="range">
-        </div>
-        <i class="fas fa-expand-alt"></i>
-        
 
-      </div>
-    </section>
   </main>
+  <section id="player-container">
+    <div class="left-container">
+      <div class="player-image">
+        <img src="10.jpg" alt="image">
+        <div class="image-detail">
+          <p class="song-name">Koi Fariyad</p>
+          <p class="name">B PRAAK </p>
+        </div>
+      </div>
+      <div class="heart">
+        <span><i class="far fa-heart"></i></span>
+        <i class="fas fa-ban"></i>
+      </div>
+    </div>
+    <div class="middle-container">
+      <div class="control">
+        <span class="shuffle"><i class="fas fa-random"></i></span>
+        <span class="back"><i class="fas fa-step-backward"></i></span>
+        <span class="pause"><i class="far fa-pause-circle"></i></span>
+        <span class="back"><i class="fas fa-step-forward"></i></span>
+        <span class="shuffle"><i class="fas fa-redo-alt"></i></span>
+      </div>
+      <div class="duration">
+        <p>2.39 </p>
+        <input type="range">
+        <p> 4.44</p>
+      </div>
+    </div>
+    <div class="right-container">
+      <i class="fas fa-file-alt"></i>
+      <i class="fas fa-music"></i>
+      <div class="volume">
+        <i class="fas fa-volume-up"></i>
+        <input type="range">
+      </div>
+      <i class="fas fa-expand-alt"></i>
+
+
+    </div>
+  </section>
+ 
+
 </body>
 
 </html>
