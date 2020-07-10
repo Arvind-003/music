@@ -256,7 +256,7 @@ header {
 .station {
   width: 14rem;
   height: 14rem;
-  /* background-color: darkgray; */
+  background-color: darkgray;
   position: relative;
 }
 .inner1 {
@@ -661,4 +661,125 @@ header {
 {
   color: rgb(195, 190, 186);
   font-size: 1.2rem;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width:1868px){
+  .slide-show img{
+    width: 370px;
+  }
+  
+  /* party-container */
+
+  .party{
+    width: 430px;
+    height: 230px;
+   
+  }
+}
+
+@media (max-width:1818px){
+  .party{
+    width: 410px;
+    height: 230px;
+   
+  }
+}
+
+@media (max-width:1806px){
+  .slide-show img{
+    width: 350px;
+  }
+}
+
+@media (max-width:1868px){
+  .slide-show img{
+    width: 320px;
+  }
+  
+  /* party-container */
+
+  .party{
+    width: 360px;
+    height: 190px;
+   
+  }
+}
+
+@media (max-width:1572px){
+  .slide-show img:hover {
+    transform: scale(1.2);
+    
+  }
+}
+@media (max-width:1524px)
+{
+  .slide-show img{
+    width: 300px;
+    height: 280px;
+  }
+  
+  /* party-container */
+
+  .party{
+    width: 340px;
+    height: 180px;
+   
+  }
+
+  /* latest english */
+  .onism{
+    width: 11rem;
+    height: 14rem;
+    
+  }
+  .onism-image{
+    height: 10rem;
+    
+  }
+  .onism .name{
+    font-size: 1.1rem;
+    font-weight: 400;
+    
+  }
+   .onism .date{
+    font-size: 0.9rem;
+    font-weight: 200;
+    
+  }
+}
+
+@media (max-width:1470px)
+{
+  /* POPULAR ARTIST */
+
+  .artist{
+    width: 7rem;
+  }
+  .artist-image{
+    width: 7rem;
+    }  
+  .popular-artist-collection .artist p{
+    font-size: 1.1rem;
+    
+  }
+  /* MUSIC STATION */
+  .station {
+    width: 12rem;
+    height: 12rem;
+  }
+  .station-music {
+    width: 7rem;
+    height: 7rem;
+   
+  }
+  
+  .station-music p{
+     font-size: 1.6rem;
+    
+  }
 }
