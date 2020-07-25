@@ -23,12 +23,11 @@ header {
   width: 40%;
 }
 .logo {
-  width: 30%;
-  display: flex;
-  align-items: center;
+  /* width: 30%; */
+  
 }
 .logo img {
-  transform: scale(0.7);
+  width: 7rem;
 }
 .logo-container .favourite {
   color: ivory;
@@ -101,18 +100,27 @@ header {
 .nav-menu .nav-menu-search-box{
   background: rgb(6, 10, 32);
   border: 2px solid red;
-  height: 3.5rem;
+  height: 2.5rem;
   width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+/* .search-box {
+    
+  height: 2.5rem;
+}
+.search-box input {
+  height: 60%;
+  font-size: 1rem;
+  
+} */
 .nav-menu .nav-menu-search-box i{
   color: tomato;
 }
 .nav-menu .nav-menu-search-box input{
   height: 60%;
-  font-size: 1.4rem;
+  font-size: 1rem;
   width: 85%;
   outline: none;
   background: transparent;
@@ -1000,9 +1008,7 @@ header {
     height: 120px;
     background-color: rgb(14, 11, 11);
   }
-  .logo img {
-    transform: scale(0.6);
-  }
+  
   .logo-container .favourite {
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
@@ -1314,9 +1320,7 @@ header {
     height: 100px;
     background-color: rgb(14, 11, 11);
   }
-  .logo img {
-    transform: scale(0.5);
-  }
+  
   .logo-container .favourite {
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
@@ -1394,8 +1398,8 @@ header {
 
 @media (max-width:854px)
 {
-  /* navigator */
-  .container .logo-container  .favourite{
+   /* nav container */
+    .container .logo-container  .favourite{
     display: none;
   }
   .container .search-container{
