@@ -192,7 +192,7 @@ header {
   height: 300px;
   transition: 0.5s all ease-in-out;
   opacity: 0.8;
-  box-shadow: 5px 5px 6px  rgb(255, 38, 0);
+  box-shadow: 5px 5px 6px  rgb(255, 0, 0);
 }
 .slide-show img:hover {
   transform: scale(1.2);
@@ -1508,7 +1508,7 @@ header {
     
   }
   /* slide show */
-  .slide-show .right,.middle{
+  .slide-show .left,.middle{
     display: none;
   }
   .slide-show{
