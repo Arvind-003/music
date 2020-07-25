@@ -271,6 +271,24 @@ header {
 .latest-release-column2 {
   width: 10%;
   /* background-color: turquoise; */
+  position: relative;
+}
+.latest-release-column2 .hover .latest-release-hover{
+  position: absolute;
+  width: 7rem;
+  background-color: #1b145a;
+  cursor: pointer;
+  right: 2rem;
+  top: 2.6rem;
+  display: none;
+
+}
+.latest-release-column2 .hover:hover .latest-release-hover{
+  display: block;
+}
+.latest-release-column2 .hover .latest-release-hover p{
+  margin-top: 1rem;
+  margin-left: 0.3rem;
 }
 .latest-release-column2 i {
   font-size: 1.6rem;
@@ -595,39 +613,51 @@ header {
 }
 .queue-row .row1:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(255, 0, 0);
 }
 .queue-row .row2:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(9, 236, 20);
 }
 .queue-row .row3:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(205, 4, 255);
 }
 .queue-row .row4:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(9, 24, 236);
 }
 .queue-row .row5:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(236, 92, 9);
 }
 .queue-row .row6:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(236, 232, 9);
 }
 .queue-row .row7:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(9, 236, 20);
 }
 .queue-row .row8:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(51, 9, 236);
 }
 .queue-row .row9:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(236, 9, 9);
 }
 .queue-row .row10:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(9, 236, 77);
 }
 .queue-row .row11:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(236, 9, 9);
 }
 .queue-row .row12:hover{
   background-color:  rgb(14, 11, 11);
+  box-shadow: 5px 5px 6px rgb(0, 4, 255);
 }
 
 .row .column1 {
@@ -853,6 +883,12 @@ header {
     transform: scale(1.2);
     
   }
+  /* .latest-release-hover */
+  .latest-release-column2 .hover .latest-release-hover{
+    
+    right: 1.2rem;
+    top: 2.6rem;
+  }
 }
 @media (max-width:1524px)
 {
@@ -1055,6 +1091,12 @@ header {
     top: 1.8rem;
     left: 3rem;
     font-size: 3.5rem;
+  }
+  .latest-release-column2 .hover .latest-release-hover{
+    width: 6rem;
+    right: 0.7rem;
+    top: 2.3rem;
+  
   }
 
   /* MUSIC STATION */
@@ -1443,6 +1485,18 @@ header {
     display: none;
     
   }
+  /* .latest-release-hover */
+  .latest-release-column2 .hover .latest-release-hover{
+    right: 0.4rem;
+  
+  }
+}
+@media (max-width:756px){
+  /* .latest-release-hover */
+  .latest-release-column2 .hover .latest-release-hover{
+    right: 0.2rem;
+  
+  }
 }
 
 @media (max-width:728px){
@@ -1498,7 +1552,11 @@ header {
   @media (max-width:710px){
     /* LATEST RELEASE CONTAINER */
     
+    /* .latest-release-hover */
+  .latest-release-column2 .hover .latest-release-hover{
+    right: 2.6rem;
   
+  }
     .latest-release-container {
       width: 100%;
       height: 650px;
@@ -1550,6 +1608,11 @@ header {
       top: 2rem;
       
     }
+     /* .latest-release-hover */
+    .latest-release-column2 .hover .latest-release-hover{
+      right: 2rem;
+    
+    }
   }
 @media (max-width:516px){
   #player-container .right-container .left-side{
@@ -1571,6 +1634,10 @@ header {
       top: 2rem;
       
     }
+    .latest-release-column2 .hover .latest-release-hover{
+      right: 1.6rem;
+    
+    }
   }
 
   @media (max-width:450px){
@@ -1583,6 +1650,13 @@ header {
     {
       color: rgb(195, 190, 186);
       font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width:420px){
+    .latest-release-column2 .hover .latest-release-hover{
+      right: 1.2rem;
+    
     }
   }
   
