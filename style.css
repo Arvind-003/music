@@ -241,25 +241,29 @@ header {
   display: flex;
   align-items: center;
   color: azure;
+  
 }
 .latest-release-column1 img {
   width: 8rem;
   margin-left: 20px;
-  cursor: pointer;
+  
+  
 }
 .latest-release-column1 .title{
   margin-left: 10px;
 }
 .latest-release-column1 .play{
   position: relative;
+  transition: 0.6s ease-in-out;
 }
 .latest-release-column1 .play i{
   display: none;
   position: absolute;
-  top: 2rem;
+  top: 2.5rem;
+  
   left: 4rem;
-  color: #070506;
-  font-size: 4rem;
+  color: #ffffff;
+  font-size: 3rem;
 }
 .latest-release-column1 .play:hover {
   opacity: 0.4;
@@ -331,17 +335,36 @@ header {
 .artist-image{
   width: 8rem;
   transition: 0.4s ease-in-out;
+  position: relative;
 
   }
   .artist-image:hover{
   
-    opacity: 0.4;
+    opacity: 0.6;
     }
+  .artist-image i{
+    font-size: 2.5rem;
+    display: none;
+    
+    position: absolute;
+    top: 3rem;
+    right: 2.3rem;
+    color: white;
+        
+  }
+  .artist-image:hover i{
+    display: block;
+    opacity: 0.8;
+    
+  }
+
+  
 .artist-image img{
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
+
 
 
 .popular-artist-collection .artist p{
@@ -612,6 +635,8 @@ header {
 .queue-row .row {
   display: flex;
   height: 6rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
   /* background-color: blue; */
 }
 .queue-row .row1:hover{
@@ -966,6 +991,15 @@ header {
    
   }
 }
+@media (max-width:1452px){
+  /* .popular-artist-container */
+  .artist-image i{
+    font-size: 2.5rem;   
+    top: 2.8rem;
+    right: 2.3rem;
+        
+  }
+}
 
 @media (max-width:1440px)
 {
@@ -1077,6 +1111,12 @@ header {
     font-size: 0.9rem;
     
   }
+  .artist-image i{
+    font-size: 2.5rem;   
+    top: 2rem;
+    right: 2rem;
+        
+  }
   /* LATEST RELEASE */
   .latest-release-column1 img {
     width: 7rem;
@@ -1092,8 +1132,8 @@ header {
   }
   .latest-release-column1 .play i{
     top: 1.8rem;
-    left: 3rem;
-    font-size: 3.5rem;
+    left: 3.5rem;
+    font-size: 3rem;
   }
   .latest-release-column2 .hover .latest-release-hover{
     width: 6rem;
@@ -1504,41 +1544,47 @@ header {
 
 @media (max-width:728px){
   /* nav menu hover */
-  .nav-menu-container .nav-menu-list{
-    position: absolute;
-    right:  4rem;
-    top: 2rem;
+    .nav-menu-container .nav-menu-list{
+      position: absolute;
+      right:  4rem;
+      top: 2rem;
+      
+    }
+    /* slide show */
+    .slide-show .left,.middle{
+      display: none;
+    }
+    .slide-show{
+      height: 250px;
+      /* background-color: red; */
+    }
+  .slide-show img {
+      width: 100%;
+      height: 100%;
+    }
     
-  }
-  /* slide show */
-  .slide-show .left,.middle{
-    display: none;
-  }
-  .slide-show{
-    height: 250px;
-    /* background-color: red; */
-  }
- .slide-show img {
-     width: 100%;
-     height: 100%;
-   }
-   
-  /* popular Artist */
-  .popular-artist-collection{
-    flex-wrap: wrap;
-  }
-  .artist{
-    width: 7rem;
-    /* background-color: rgb(250, 208, 19); */
-    margin-top: 1rem;
-  }
-  .artist-image{
-    width: 7rem;
-    }  
-  .popular-artist-collection .artist p{
-    font-size: 0.9rem;
-    
-  }
+    /* popular Artist */
+    .popular-artist-collection{
+      flex-wrap: wrap;
+    }
+    .artist{
+      width: 7rem;
+      /* background-color: rgb(250, 208, 19); */
+      margin-top: 1rem;
+    }
+    .artist-image{
+      width: 7rem;
+      }  
+    .popular-artist-collection .artist p{
+      font-size: 0.9rem;
+      
+    }
+    .artist-image i{
+      font-size: 2.5rem;   
+      top: 2.5rem;
+      right: 2rem;
+          
+    }
   }
 
   /* MUSIC STATION */
@@ -1587,6 +1633,11 @@ header {
     height: 150px;
     /* background-color: yellow; */
     display: flex;
+  }
+  .latest-release-column1 .play i{
+    top: 1.8rem;
+    left: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 

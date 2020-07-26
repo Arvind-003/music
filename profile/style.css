@@ -265,7 +265,12 @@
     height: 70px;
     display: flex;
     margin-top: 1rem;
+    transition: 0.3s ease-in-out;
     /* background-color: rgb(85, 81, 81); */
+  }
+  .track-container .track:hover{
+    box-shadow: 5px 5px 6px   rgb(255, 38, 0);
+    cursor: pointer;
   }
   .track-container .track .track-left{
     width: 80%;
@@ -416,6 +421,8 @@
   .queue-row .row {
     display: flex;
     height: 6rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
     /* background-color: blue; */
   }
   .queue-row .row1:hover{
